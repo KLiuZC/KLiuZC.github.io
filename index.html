@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhicheng Liu — software developer and builder.">
+  <title>Zhicheng Liu</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f3ed; --ink:#171714; --muted:#6d6a63; --line:rgba(23,23,20,.14); --accent:#245b43; --card:rgba(255,255,255,.52); }
+    @media (prefers-color-scheme: dark) { :root { --bg:#111310; --ink:#f2f0e9; --muted:#aaa79e; --line:rgba(255,255,255,.14); --accent:#8fc9a9; --card:rgba(255,255,255,.04); } }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; min-height:100vh; background:var(--bg); color:var(--ink); font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .shell { width:min(1080px,calc(100% - 40px)); margin:0 auto; }
+    header { display:flex; align-items:center; justify-content:space-between; min-height:84px; border-bottom:1px solid var(--line); }
+    .mark { color:var(--ink); font-size:14px; font-weight:750; letter-spacing:.08em; text-decoration:none; }
+    nav { display:flex; gap:22px; }
+    nav a, .links a { color:var(--muted); font-size:14px; font-weight:600; text-decoration:none; transition:color .2s ease; }
+    nav a:hover, .links a:hover { color:var(--ink); }
+    main { display:grid; align-content:center; min-height:calc(100vh - 168px); padding:72px 0; }
+    .eyebrow { margin:0 0 24px; color:var(--accent); font-size:13px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+    h1 { max-width:900px; margin:0; font-size:clamp(52px,9vw,112px); line-height:.96; letter-spacing:-.075em; }
+    .intro { max-width:620px; margin:34px 0 0; color:var(--muted); font-size:clamp(18px,2.2vw,24px); line-height:1.55; }
+    .panel { display:flex; align-items:center; justify-content:space-between; gap:24px; margin-top:54px; padding:22px 24px; border:1px solid var(--line); border-radius:18px; background:var(--card); }
+    .status { display:flex; align-items:center; gap:10px; color:var(--muted); font-size:14px; }
+    .dot { width:8px; height:8px; border-radius:50%; background:#36a66a; box-shadow:0 0 0 5px rgba(54,166,106,.13); }
+    .links { display:flex; flex-wrap:wrap; gap:20px; }
+    footer { display:flex; justify-content:space-between; gap:20px; min-height:84px; padding:26px 0; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media (max-width:640px) { .shell { width:min(100% - 28px,1080px); } header { min-height:70px; } nav { gap:14px; } main { min-height:calc(100vh - 140px); padding:56px 0; } h1 { font-size:clamp(48px,18vw,72px); } .panel, footer { align-items:flex-start; flex-direction:column; } .panel { margin-top:40px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="mark" href="/">ZL</a>
+      <nav aria-label="Primary navigation">
+        <a href="https://github.com/KLiuZC">GitHub</a>
+        <a href="mailto:hello@zcliu.me">Email</a>
+      </nav>
+    </header>
+    <main>
+      <section aria-labelledby="intro-title">
+        <p class="eyebrow">Software developer · Sydney</p>
+        <h1 id="intro-title">Hi, I'm<br>Zhicheng Liu.</h1>
+        <p class="intro">I build thoughtful software and explore the space where technology, artificial intelligence, and useful products meet.</p>
+        <div class="panel">
+          <div class="status"><span class="dot" aria-hidden="true"></span><span>Open to interesting conversations</span></div>
+          <div class="links">
+            <a href="mailto:hello@zcliu.me">hello@zcliu.me</a>
+            <a href="https://github.com/KLiuZC">github.com/KLiuZC</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer><span>© 2026 Zhicheng Liu</span><span>Built simply. Hosted on GitHub Pages.</span></footer>
+  </div>
+</body>
+</html>
